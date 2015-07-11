@@ -28,10 +28,7 @@
 </ion-view>
  -->
 
- <ion-view view-title="Register">
-
-
-
+ <ion-view view-title="Register This Device">
   <ion-header-bar>
     <h1 class="title">Login</h1>    
     <div class="buttons">
@@ -47,11 +44,12 @@
   <div class="item item-text-wrap">
       <span>
           <!--<p><h3 ng-controller="PlatformCtrl"> deviceInformation: {{device}} </h3></p>-->
-          <p>Model: <h3 ng-controller="PlatformCtrl"> {{device.model}} </h3></p>
-          <p>Platform:<h3 ng-controller="PlatformCtrl">  {{device.platform}} </h3></p>
-          <p> SDK Version: <h3 ng-controller="PlatformCtrl">{{device.version}} </h3></p>
-          <p>UUID:<h3 ng-controller="PlatformCtrl">  {{device.uuid}} </h3></p>
-          <p> Manufacturer:<h3 ng-controller="PlatformCtrl"> {{device.manufacturer}} </h3></p>
+          <p>Model: <h2 ng-controller="PlatformCtrl"> {{device.model}} </h2></p>
+          <p>Platform:<h2 ng-controller="PlatformCtrl">  {{device.platform}} </h2></p>
+          <p> SDK Version: <h2 ng-controller="PlatformCtrl">{{device.version}} </h2></p>
+          <p>UUID:<h2 ng-controller="PlatformCtrl">  {{device.uuid}} </h2></p>
+          <p> Manufacturer:<h2 ng-controller="PlatformCtrl"> {{device.manufacturer}} </h2></p>
+          <p> Current Owner:<h2 ng-controller="PlatformCtrl"> Yan Xia </h2></p>
       </span>
   </div>
 
@@ -82,7 +80,7 @@
     <input type="text" placeholder="Last Name">
   </label>
           <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
+          <button class="button button-block button-positive" type="submit">Register This Device Under Your Name</button>
         </label>
 
 </div>
