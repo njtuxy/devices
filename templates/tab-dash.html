@@ -1,0 +1,92 @@
+<!-- <ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Recent Updates</div>
+      <div class="item item-body">
+        <div>
+          There is a fire in <b>sector 3</b>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Health</div>
+      <div class="item item-body">
+        <div>
+          You ate an apple today!
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+ -->
+
+ <ion-view view-title="Register">
+
+
+
+  <ion-header-bar>
+    <h1 class="title">Login</h1>    
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>    
+  </ion-header-bar>
+  <ion-content>
+
+<div class="card">
+  <div class="item item-divider">
+    This Device:
+  </div>
+  <div class="item item-text-wrap">
+      <span>
+          <!--<p><h3 ng-controller="PlatformCtrl"> deviceInformation: {{device}} </h3></p>-->
+          <p>Model: <h3 ng-controller="PlatformCtrl"> {{device.model}} </h3></p>
+          <p>Platform:<h3 ng-controller="PlatformCtrl">  {{device.platform}} </h3></p>
+          <p> SDK Version: <h3 ng-controller="PlatformCtrl">{{device.version}} </h3></p>
+          <p>UUID:<h3 ng-controller="PlatformCtrl">  {{device.uuid}} </h3></p>
+          <p> Manufacturer:<h3 ng-controller="PlatformCtrl"> {{device.manufacturer}} </h3></p>
+      </span>
+  </div>
+
+</div>
+
+<!--     <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+ -->    
+
+<div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" placeholder="First Name">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Last Name">
+  </label>
+          <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+
+</div>
+
+  </ion-content>
+</ion-modal-view>
+</ion-view>
